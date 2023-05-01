@@ -7,31 +7,12 @@ import { useState } from 'react';
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import * as styles from "../components/index.module.css";
-import "bootstrap/dist/js/bootstrap.min.js"
-import "jquery/dist/jquery.min.js"
+
 
 <>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-  integrity="sha384-6YjU6bG5+DrKh5r5K2v5R5lvThw+AEyjblzJ97EaKmJpucwj7lJZl1X+Dq3IynpE"
-  crossorigin="anonymous"
-/>
-  </link>
-  <><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-l4M4m4IVSZzvG2UnEGcKiJG/GVx9XsZvLzs7EKF8/0nNwHHp/gTGWJdD1W8nJPrx"
-  crossorigin="anonymous"
-></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./layout.css"></link>
-  </></>
+  </>
 
 function getJoke() {
   fetch('https://v2.jokeapi.dev/joke/Any?type=single&safe-mode')
