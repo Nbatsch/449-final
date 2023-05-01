@@ -33,14 +33,15 @@ import "jquery/dist/jquery.min.js"
     <link rel="stylesheet" href="./layout.css"></link>
   </></>
 
+
+
 function getJoke() {
   fetch('https://v2.jokeapi.dev/joke/Any?type=single&safe-mode')
     .then(response => response.json())
     .then(data => {
-      if (typeof document!== 'underfined') {
       const jokeElement = document.getElementById('joke');
       jokeElement.innerHTML = data.joke;
-    }})
+    })
     .catch(error => console.log(error));
 }
 
@@ -84,9 +85,8 @@ function setUpCarousel(carousel) {
   buttonNext.addEventListener('click', handleNext);
 }
 
-const carousels = () => { if(typeof document !=='undefined');
-document.querySelectorAll('[data-carousel]');
-carousels.forEach(setUpCarousel);}
+const carousels = document.querySelectorAll('[data-carousel]');
+carousels.forEach(setUpCarousel);
 
 
 const links = [
@@ -185,7 +185,7 @@ const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
       <StaticImage id="sasoripfp"
-        src="https://steamuserimages-a.akamaihd.net/ugc/840330163396078759/FFC584FB3BB2EC1E2A033F1639D39A11BFCB826F/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+        src="https://i.pinimg.com/564x/7a/7a/9b/7a7a9b1fc857312c15abc685fc1fd1b8.jpg"
         loading="eager"
         width={400}
         quality={100}
