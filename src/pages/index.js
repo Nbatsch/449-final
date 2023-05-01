@@ -84,8 +84,9 @@ function setUpCarousel(carousel) {
   buttonNext.addEventListener('click', handleNext);
 }
 
-const carousels = document.querySelectorAll('[data-carousel]');
-carousels.forEach(setUpCarousel);
+const carousels = () => { if(typeof document !=='undefined');
+document.querySelectorAll('[data-carousel]');
+carousels.forEach(setUpCarousel);}
 
 
 const links = [
