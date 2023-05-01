@@ -37,9 +37,10 @@ function getJoke() {
   fetch('https://v2.jokeapi.dev/joke/Any?type=single&safe-mode')
     .then(response => response.json())
     .then(data => {
+      if (typeof document!== 'underfined') {
       const jokeElement = document.getElementById('joke');
       jokeElement.innerHTML = data.joke;
-    })
+    }})
     .catch(error => console.log(error));
 }
 
